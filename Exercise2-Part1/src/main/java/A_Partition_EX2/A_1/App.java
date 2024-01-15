@@ -5,6 +5,13 @@ package A_Partition_EX2.A_1;
  *
  */
 public class App {
+	/**
+	 * A method that takes a number as a parameter and checks to which BVA group
+	 * this number belongs
+	 * 
+	 * @param grade
+	 * @return The letter that represents the grade, if invalid, returns "error"
+	 */
 	public static String BVA_CheckPartionGroup(int grade) {
 		if (grade >= 1 && grade <= 49)
 			return "F";
@@ -18,8 +25,8 @@ public class App {
 			return "B";
 		else if (grade >= 90 && grade <= 100)
 			return "A";
-		else
-			return "error";
+		// If the number was under 1 or above 100
+		return "error";
 	}
 
 	public static void main(String[] args) {
